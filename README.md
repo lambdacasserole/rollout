@@ -13,9 +13,9 @@ Rollout powers its own [GitHub pages site](https://lambdacasserole.github.io/rol
 2. Open up the `/docs` folder.
 3. Change the logo at `/docs/svg/logo.svg` to your own.
 4. Open up `/docs/index.html` in your favorite text editor.
-  * Change the contents of the `title` tag.
-  * Change the contents of the `meta` tags with names `description` and `author`.
-  * Change the `username` and `repo` JavaScript `const` declarations to your GitHub username (or organization name) and repository name respectively.
+    * Change the contents of the `title` tag.
+    * Change the contents of the `meta` tags with names `description` and `author`.
+    * Change the `username` and `repo` JavaScript `const` declarations to your GitHub username (or organization name) and repository name respectively.
 5. Deploy it as your pages project, you're done!
 
 If you're not familiar with setting up GitHub pages, [this is the article for you](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages).
