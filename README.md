@@ -40,13 +40,15 @@ const repo = "rollout";
 Change the value of `username` to your to your GitHub username (or organization name) and `repo` to your repository name. All default values above are for this repository.
 
 ## License
-This software is public domain, go forth and use it. The same can't be said for any third-party libraries loaded remotely (this project does use jQuery, Bootstrap etc. for example).
+This software is public domain, go forth and use it. The same can't be said for any third-party libraries loaded remotely (this project does use [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/) etc. for example).
 
 Also, by default, "Powered by Rollout" appears in the bottom right-hand corner of the page. You don't have to leave this there, get rid of it if you like, though linking back is appreciated.
 
 ## Acknowledgements
 I'd like to thank the following people for their contributions:
 
+* The [Showdown](http://showdownjs.com/) JavaScript markdown rendering library.
+* The [Bootswatch](https://bootswatch.com/) project. Awesome, free Bootstrap themes over there.
 * Yannick Croissant and Kath for the AJAX loader icon generator here: [http://www.ajaxload.info/](http://www.ajaxload.info/)
 * Michael Hagemann for the font [Wild Ride](https://www.1001fonts.com/wild-ride-font.html) which is used in the logo.
 * The SRI hash generator service [here](https://www.srihash.org/) by [Mozilla](https://github.com/mozilla), which is [open source](https://github.com/mozilla/srihash.org).
