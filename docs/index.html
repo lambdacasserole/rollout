@@ -37,7 +37,10 @@
             $(".jsProjPage").attr("href", projectPage);
             $(".jsUsername").attr("href", userPage);
             $(".jsUsername").html(username);
-
+            
+            // Enable support for tables.
+            showdown.setOption("tables", true);
+            
             // Load markdown from the readme, render it and display.
             $.ajax({
                 url: `https://raw.githubusercontent.com/${username}/${repo}/master/README.md`,
