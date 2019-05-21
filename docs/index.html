@@ -37,17 +37,18 @@
             $(".jsProjPage").attr("href", projectPage);
             $(".jsUsername").attr("href", userPage);
             $(".jsUsername").html(username);
-            
+
             // Enable support for tables.
             showdown.setOption("tables", true);
-            
+
             // Load markdown from the readme, render it and display.
             $.ajax({
                 url: `https://raw.githubusercontent.com/${username}/${repo}/master/README.md`,
                 success: function(result) {
                     var converter = new showdown.Converter();
                     var logoRemoved = result.replace(/!\[logo\]\(.+?\)/gi, ""); // Remove logo.
-                    $("#content").html(converter.makeHtml(logoRemoved));
+                    var urlsChanged = logoRemoved.replace(/!\[(.+?)\]\(docs\/(.+?)\)/gi, "![$1]($2)"); // Trim URLs.
+                    $("#content").html(converter.makeHtml(urlsChanged));
                 },
                 error: function() {
                     // Show error message.
